@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.set('port', (process.env.PORT || 5858));
+// app.set('port', (process.env.PORT || 5858));
 
 
 const {
@@ -19,6 +19,6 @@ generateTheme
 app.post("/api/display", calculateNums)
 app.get("/api/theme", generateTheme)
 
-app.listen(SERVER_PORT, () =>
+app.listen(process.env.PORT || SERVER_PORT, () =>
   console.log(`Server running on ${SERVER_PORT}`)
 )
