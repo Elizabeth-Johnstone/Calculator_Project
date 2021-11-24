@@ -19,6 +19,7 @@ generateTheme
 app.post("/api/display", calculateNums)
 app.get("/api/theme", generateTheme)
 
-app.listen(process.env.PORT || SERVER_PORT, () =>
-  console.log(`Server running on ${SERVER_PORT}`)
+app.listen(process.env.PORT || 5858, () =>
+  console.log(`Server running on 5858`)
+  // console.log(process.env.PORT)
 )
