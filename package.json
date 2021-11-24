@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "start": "node server.js"
   },
   "keywords": [],
@@ -14,5 +15,13 @@
     "express": "^4.17.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elizabeth-Johnstone/Project1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elizabeth-Johnstone/Project1/issues"
+  },
+  "homepage": "https://github.com/Elizabeth-Johnstone/Project1#readme",
   "description": ""
 }
