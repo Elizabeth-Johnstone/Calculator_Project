@@ -1,0 +1,6 @@
+MVP features:
+1. Calculations: Calculator can add, subtract, multiply, and divide integers and decimals. Calculations can also build on themselves. So, for example, you can add 6 + 2, receive 8, and then subtract 1, to get 7. Clicking the "=" button clears the current screen and displays the answer to the calculation.
+
+2. Clear button: Clicking the clear button clears the display screen. This means that users can simply click "clear" if they wish to perform a new calculation, rather than refreshing the page.
+
+3. Random theme generator: Users can click the "change your theme" button to change the Space Calculator's theme. The code was written so that the theme will be random, but it will not repeat the same theme twice. This means that if your current theme is pink, it will not randomly assign the theme to pink again when you click on the button.

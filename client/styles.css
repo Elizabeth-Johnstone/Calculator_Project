@@ -22,7 +22,25 @@
     --active-equation: #63c7d4;
     }
 
-.theme-pink, .theme-blue {
+.theme-green {
+    background: url(https://www.teahub.io/photos/full/1-16956_space-stars-green-wallpaper-green-star-wallpaper-hd.jpg);
+    --light-color: rgb(197,255,240);
+    --medium-color:rgb(70,181,123);
+    --dark-color: rgb(27,79,46);
+    --active-button:rgb(59, 117, 80);
+    --active-equation: rgb(97, 197, 170);
+}
+
+.theme-orange {
+    background: url(http://phpography.com/images/orange-galaxy-wallpaper-1.jpg);
+    --light-color: rgb(248, 219, 179);
+    --medium-color:rgb(234,148,52);
+    --dark-color: rgb(133,30,26);
+    --active-button:rgb(167, 82, 79);
+    --active-equation: rgb(230, 167, 80);
+}
+
+.theme-pink, .theme-blue, .theme-green, .theme-orange {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
