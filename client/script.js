@@ -20,6 +20,18 @@ function clearScreen() {
 function calculate() {
     let body = { inputVals: displayScreen.value }
     axios.post("http://localhost:5858/api/display", body).then((res) => displayScreen.value = res.data)
-    
     .catch((error) => console.log(error))
+}
+
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+function changeTheme() {
+    if (localStorage.getItem('theme') === 'theme-pink') {
+        setTheme('theme-blue');
+    } else {
+        setTheme('theme-pink');
+    }
 }

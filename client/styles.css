@@ -4,18 +4,35 @@
     box-sizing: border-box;
 }
 
-body {
+.theme-pink {
     background: url(https://img3.goodfon.com/wallpaper/nbig/c/bb/space-galaxy-purple-stars.jpg);
+    --light-color: #FECDCD;
+    --medium-color:#FE8B87;
+    --dark-color: #8C3964;
+    --active-button:#B55389;
+    --active-equation: #ffaaaa;
+    }
+
+.theme-blue {
+    background: url(https://wallpaperaccess.com/full/44211.jpg);
+    --light-color: #9DF3FF;
+    --medium-color:#1C80D9;
+    --dark-color: #02207A;
+    --active-button:#27459e;
+    --active-equation: #63c7d4;
+    }
+
+.theme-pink, .theme-blue {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
 
 h3 {
-    color: #FECDCD;
+    color: var(--light-color);
     font-size: 45px;
     font-family: 'Play', sans-serif;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: center 
 }
@@ -27,43 +44,62 @@ h3 {
     margin-top: 60px;
     padding: 10px;
     border-radius: 8px;
-    background: #FE8B87;
-
+    background: var(--medium-color);
 }
 
 #display {
     width: 99%;
     height: 99%;
-    background: #FECDCD;
+    text-align: center;
+    font-size: 24pt;
+    background: var(--light-color);
     border-radius: 8px;
+
+    color: var(--dark-color);
+    border: solid var(--light-color) 2px;
+    font-family: 'Play', sans-serif;
+    font-weight: 900;
 }
 
 .button, .equation {
     width: 95%;
     height: 80%;
-    background: #FECDCD;
+    background: var(--light-color);
     border-radius: 100px;
 }
 
 .button:active {
-    background: #B55389;
+    background: var(--active-button);
 }
 
-.button, #display, .equation {
-    color: #8C3964;
-    border: solid #FECDCD 2px;
+.button, .equation {
+    color: var(--dark-color);
+    border: solid var(--light-color) 2px;
     font-family: 'Play', sans-serif;
     font-size: x-large;
     font-weight: 900
 }
 
 .equation {
-    background: #8C3964;
-    border: solid #8C3964 2px;
-    color: #FECDCD;
+    background: var(--dark-color);
+    border: solid var(--dark-color) 2px;
+    color: var(--light-color);
 }
 
 .equation:active {
-    background: #ffaaaa;
+    background: var(--active-equation);
 }
 
+#theme-button {
+    background: var(--dark-color);
+    border: solid var(--light-color) 2px;
+    color: var(--light-color);
+    font-family: 'Play', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}

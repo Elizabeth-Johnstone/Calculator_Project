@@ -3,7 +3,6 @@ const express = require("express");
 const cors = require("cors");
 
 const { SERVER_PORT } = process.env;
-const authCtrl = require("./controllers/controller.js");
 
 const app = express();
 
