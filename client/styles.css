@@ -63,7 +63,7 @@ h3 {
     color: #FECDCD;
 }
 
-#equation:active {
+.equation:active {
     background: #ffaaaa;
 }
 

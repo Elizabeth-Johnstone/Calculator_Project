@@ -10,8 +10,25 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// app.get("/login", authCtrl.login);
-// app.get("/login", authCtrl.getColors)
+app.post("/api/display", (req, res) => {
+  toCalculate = req.body.inputVals
+  numsToCalculate = toCalculate.split(/[-+/x]/)
+
+  firstNum = parseFloat(numsToCalculate[0])
+  secondNum = parseFloat(numsToCalculate[1])
+
+  if (toCalculate.includes("/")) {
+    answer = firstNum / secondNum
+  } else if (toCalculate.includes("x")) {
+    answer = firstNum * secondNum
+  } else if (toCalculate.includes("-")) {
+    answer = firstNum - secondNum
+  } else if (toCalculate.includes("+")) {
+    answer =  firstNum + secondNum
+  } else {answer = firstNum}
+  console.log(numsToCalculate)
+  res.status(200).send(`${answer}`)
+})
 
 app.listen(SERVER_PORT, () =>
   console.log(`Server running on ${SERVER_PORT}`)

@@ -1,32 +1,25 @@
-
-const divideButton = document.getElementById("divide")
-const multiplyButton = document.getElementById("multiply")
-const subtractButton = document.getElementById("subtract")
-const addButton = document.getElementById("add")
+// const divideButton = document.getElementById("divide")
+// const multiplyButton = document.getElementById("multiply")
+// const subtractButton = document.getElementById("subtract")
+// const addButton = document.getElementById("add")
+const displayScreen = document.getElementById("display")
+const clearButton = document.getElementById("clear")
 const equalsButton = document.getElementById("equals")
 
-
-
-
-function clearScreen() {
-    document.getElementById("display").value = ""
-}
+clearButton.addEventListener("click", clearScreen)
+equalsButton.addEventListener("click", calculate)
 
 function display(value) {
-    document.getElementById("display").value += value
+    displayScreen.value += value
 }
 
-// function divide() {
-//     let firstNumber = document.getElementById("display").value
-//     result = firstNumber / 
-// }
+function clearScreen() {
+    displayScreen.value = ""
+}
 
-// function calculation() {
-//     let firstNumber = document.getElementById("display").value
-
-//     let answer = eval(firstNumber)
-//     document.getElementById("display").value = answer;
-//     console.log(answer)
-// }
-
-
+function calculate() {
+    let body = { inputVals: displayScreen.value }
+    axios.post("http://localhost:5858/api/display", body).then((res) => displayScreen.value = res.data)
+    
+    .catch((error) => console.log(error))
+}

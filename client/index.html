@@ -22,26 +22,26 @@
                 <th colspan="4"><input id="display" type="text"/></th>
             </tr>
             <tr>
-                <td colspan="3"><input class="button"  type="button" value="Clear" onclick="clearScreen()"/></td>
-                <td><input class="equation" id="divide" type="button" value="÷"/></td>
+                <td colspan="3"><input class="button" id="clear" type="button" value="Clear"/></td>
+                <td><input class="equation" id="divide" type="button" value="÷" onclick="display('/')"></td>
             </tr>
             <tr>
-                <td><input class="button" type="button" value="7" onclick="display('7')"</td>
+                <td><input class="button"  type="button" value="7" onclick="display('7')"</td>
                 <td><input class="button"  type="button" value="8" onclick="display('8')"</td>
                 <td><input class="button"  type="button" value="9" onclick="display('9')"</td>
-                <td><input class="equation"  id="multiply" type="button"value="x" onclick="calculation()"</td>
+                <td><input class="equation"  id="multiply" type="button"value="x" onclick="display('x')"</td>
             </tr>
             <tr>
                 <td><input class="button"  type="button" value="4" onclick="display('4')"</td>
                 <td><input class="button"  type="button" value="5"onclick="display('5')"</td>
                 <td><input class="button"  type="button" value="6"onclick="display('6')"</td>
-                <td><input class="equation" id="subtract" type="button" value="-"</td>
+                <td><input class="equation" id="subtract" type="button" value="-" onclick="display('-')"</td>
             </tr>
             <tr>
                 <td><input class="button"  type="button" value="1" onclick="display('1')"</td>
                 <td><input class="button"  type="button" value="2" onclick="display('2')"</td>
                 <td><input class="button"  type="button" value="3" onclick="display('3')"</td>
-                <td><input class="equation" id="add" type="button" value="+"</td>
+                <td><input class="equation" id="add" type="button" value="+" onclick="display('+')"</td>
             </tr>
             <tr>
                 <td><input class="button"  type="button" value="0" onclick="display('0')"</td>
@@ -51,6 +51,7 @@
         </table>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 <script src="script.js"></script>
 </html>
 
