@@ -33,5 +33,4 @@ function changeTheme() {
         }
     })
     .catch((error) => console.log(error))
-
 }
