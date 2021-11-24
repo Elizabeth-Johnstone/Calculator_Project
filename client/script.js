@@ -1,7 +1,3 @@
-// const divideButton = document.getElementById("divide")
-// const multiplyButton = document.getElementById("multiply")
-// const subtractButton = document.getElementById("subtract")
-// const addButton = document.getElementById("add")
 const displayScreen = document.getElementById("display")
 const clearButton = document.getElementById("clear")
 const equalsButton = document.getElementById("equals")

@@ -25,7 +25,6 @@ app.post("/api/display", (req, res) => {
   } else if (toCalculate.includes("+")) {
     answer =  firstNum + secondNum
   } else {answer = firstNum}
-  console.log(numsToCalculate)
   res.status(200).send(`${answer}`)
 })
 
