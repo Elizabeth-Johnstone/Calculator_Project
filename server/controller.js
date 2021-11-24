@@ -1,7 +1,3 @@
-
-
-
-
 module.exports = {
     calculateNums: (req, res) => {
         toCalculate = req.body.inputVals
