@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("client"))
 
 app.get('/', (req, res) => {
-  res.sendFile('client/index.html')
+  res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
 const {

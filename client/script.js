@@ -15,8 +15,9 @@ function clearScreen() {
     displayScreen.value = ""
 }
 
-const API = process.env.NODE_ENV === 'production' ? 'https://space-calculator-project.herokuapp.com/api' : 'http://localhost:5858/api'
-
+// const API = process.env.NODE_ENV === 'production' ? 'https://space-calculator-project.herokuapp.com/api' : 'http://localhost:5858/api'
+const API = 'http://localhost:5858/api'
+console.log(API)
 
 function calculate() {
     let body = { inputVals: displayScreen.value }
