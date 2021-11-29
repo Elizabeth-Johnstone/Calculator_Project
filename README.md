@@ -8,6 +8,8 @@ Learn more about the developer: https://www.linkedin.com/in/johnstoneelizabeth/
 ### Project description
 The Space Calculator is a full-stack web application that transports users to the stars while they make their calculations. This app provides all the functionality of a basic calculator, along with a few exciting new galaxies to explore.
 
+![alt text](pink_theme.png "Pink theme")
+
 ### Technologies
 * JavaScript
 * HTML
@@ -24,9 +26,10 @@ The Space Calculator is a full-stack web application that transports users to th
 * Users can build upon previous calculations. This means that if "4" is returned from "2+2," users can subsequently use "+," "-," "x," or "/" to perform a new calculation with the returned value ("4"). Alternatively, users can clear the screen to start over.
 
 *3. Change your theme*
-* 
+* When users click on the "Transport to a different galaxy" button, the app's theme is randomly changed. There are 4 different themes: pink, blue, green, and orange, each representing different galaxies.
 
 ### Screenshots
 
-
-Maybe: instruction on how to install
+![alt text](blue_theme.png "Blue theme")
+![alt text](green_theme.png "Green theme")
+![alt text](orange_theme.png "Orange theme")
