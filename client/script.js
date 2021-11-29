@@ -15,18 +15,14 @@ function clearScreen() {
     displayScreen.value = ""
 }
 
-// const API = process.env.NODE_ENV === 'production' ? 'https://space-calculator-project.herokuapp.com/api' : 'http://localhost:5858/api'
-const API = 'http://localhost:5858/api'
-console.log(API)
-
 function calculate() {
     let body = { inputVals: displayScreen.value }
-    axios.post(`${API}/display`, body).then((res) => displayScreen.value = res.data)
+    axios.post(`http://localhost:5858/api/display`, body).then((res) => displayScreen.value = res.data)
     .catch((error) => console.log(error))
 }
 
 function changeTheme() {
-    axios.get(`${API}/theme`)
+    axios.get(`http://localhost:5858/api/theme`)
     .then(function (res) {
         let currentTheme = document.documentElement.className
         if (res.data === currentTheme) {
