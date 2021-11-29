@@ -17,8 +17,8 @@ function clearScreen() {
 
 // const baseURL = process.env.NODE_ENV === 'production' ? 'https://space-calculator-project.herokuapp.com/' : 'http://localhost:5858';
 
-const baseURL = window.location.origin
-// const baseURL = `http://localhost:5858`
+// const baseURL = window.location.origin
+const baseURL = `http://localhost:5858`
 
 function calculate() {
     let body = { inputVals: displayScreen.value }
