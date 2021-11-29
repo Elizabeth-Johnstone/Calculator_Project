@@ -15,14 +15,16 @@ function clearScreen() {
     displayScreen.value = ""
 }
 
+const baseURL = window.location.origin
+
 function calculate() {
     let body = { inputVals: displayScreen.value }
-    axios.post(`http://localhost:5858/api/display`, body).then((res) => displayScreen.value = res.data)
+    axios.post(`${baseURL}/api/display`, body).then((res) => displayScreen.value = res.data)
     .catch((error) => console.log(error))
 }
 
 function changeTheme() {
-    axios.get(`http://localhost:5858/api/theme`)
+    axios.get(`${baseURL}/api/theme`)
     .then(function (res) {
         let currentTheme = document.documentElement.className
         if (res.data === currentTheme) {
