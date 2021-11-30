@@ -121,3 +121,7 @@ h3 {
     margin-left: 20px;
     display: flex;
 }
+
+#theme-button:active {
+    border: solid var(--active-equation) 2px;
+}
