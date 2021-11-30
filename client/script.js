@@ -16,9 +16,7 @@ function clearScreen() {
 }
 
 const baseURL = window.location.origin
-
 // const baseURL = `http://localhost:5858`
-
 
 function calculate() {
     let body = { inputVals: displayScreen.value }

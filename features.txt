@@ -3,4 +3,4 @@ MVP features:
 
 2. Clear button: Clicking the clear button clears the display screen. This means that users can simply click "clear" if they wish to perform a new calculation, rather than refreshing the page.
 
-3. Random theme generator: Users can click the "change your theme" button to change the Space Calculator's theme. The code was written so that the theme will be random, but it will not repeat the same theme twice. This means that if your current theme is pink, it will not randomly assign the theme to pink again when you click on the button.
+3. Random theme generator: Users can click the "Transport yourself!" button to change the Space Calculator's theme. The code was written so that the theme will be random, but it will not repeat the same theme twice. This means that if your current theme is pink, it will not randomly assign the theme to pink again when you click on the button.
