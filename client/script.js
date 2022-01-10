@@ -14,6 +14,7 @@ display() is used in index.html. When a button with a number or mathematical ope
 function display(value) {
     displayScreen.value += value
 }
+
 /*
 clearScreen() makes the display screen value an empty string. It clears/restarts calculations.
 */

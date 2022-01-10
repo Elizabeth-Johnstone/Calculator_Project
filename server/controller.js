@@ -22,8 +22,7 @@ calculateNums expects a string of two numbers separated by '/', 'x', '-', or '+'
         } else {answer = firstNum}
         res.status(200).send(`${answer}`)
       },
-
-      
+   
 /*
 generateTheme selects a random theme and sends it to the front-end.
 */
