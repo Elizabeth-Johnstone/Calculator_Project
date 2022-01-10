@@ -31,6 +31,6 @@ The Space Calculator is a full-stack web application that transports users to th
 *3. Change your theme*
 * When users click on the "Transport yourself!" button, the app's theme is randomly changed. There are 4 different themes: pink, blue, green, and orange, each representing a different galaxy.
 
-![alt text](blue_theme.png "Blue theme")
-![alt text](green_theme.png "Green theme")
-![alt text](orange_theme.png "Orange theme")
+![alt text](misc/blue_theme.png "Blue theme")
+![alt text](misc/green_theme.png "Green theme")
+![alt text](misc/orange_theme.png "Orange theme")
