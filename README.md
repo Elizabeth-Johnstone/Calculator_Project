@@ -8,7 +8,7 @@ Learn more about the developer: www.linkedin.com/in/johnstoneelizabeth/
 ### Project description
 The Space Calculator is a full-stack web application that transports users to the stars while they make their calculations. This app provides all the functionality of a basic calculator, along with a few exciting new galaxies to explore.
 
-![alt text](pink_theme.png "Pink theme")
+![alt text](misc/pink_theme.png "Pink theme")
 
 ### Technologies
 * JavaScript
