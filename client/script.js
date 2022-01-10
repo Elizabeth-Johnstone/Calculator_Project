@@ -27,8 +27,8 @@ function clearScreen() {
 Assign baseURL to window.location.origin for Heroku deployment. Assign it to `http://localhost:5858` to run locally.
 */
 
-// const baseURL = window.location.origin
-const baseURL = `http://localhost:5858`
+const baseURL = window.location.origin
+// const baseURL = `http://localhost:5858`
 
 /*
 calculate() uses a POST request to send user inputted values to the back-end. When calculateNums sends back an answer to the inputted values, calculate() sets the value of displayScreen to that answer.
